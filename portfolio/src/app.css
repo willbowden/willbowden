@@ -1,9 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import 'tailwindcss';
 
 @theme {
-  --font-geist: "Geist Mono", serif;
+  --font-geist: "Inter", serif;
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
+@layer components {
+  .home::after {
+    pointer-events: none;
+    content: '';
+    background: rgb(2, 0, 36);
+    background: linear-gradient(54deg in oklch,
+        oklch(from rgba(9, 181, 177, 1) l c h / 0.65) -15%,
+        oklch(from rgba(9, 181, 177, 1) l c h / 0) 48%),
+      linear-gradient(12deg in oklch,
+        oklch(from rgba(0, 112, 255, 1) calc(l - 0.1) c h / 0.65) -10%,
+        oklch(from rgba(0, 112, 255, 1) calc(l - 0.1) c h / 0) 45%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+}

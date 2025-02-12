@@ -5,13 +5,15 @@
 	let { children } = $props();
 </script>
 
-<div class="flex justify-between p-4 text-white">
+<div class="flex h-[10%] justify-between align-baseline p-4 text-white">
 	<div>
-		<nav class="ml-3 space-x-5 flex justify-evenly align-middle text-2xl font-semibold">
-			<a href="/" class={`hover:text-white ${page.route.id === '/' ? '' : 'text-gray-400'}`}>Home</a>
+		<nav class="ml-3 flex justify-evenly space-x-5 text-2xl font-semibold">
+			<a href="/" class={`hover:text-white ${page.route.id === '/' ? '' : 'text-gray-400'}`}>Home</a
+			>
 			<a
 				href="/projects"
-				class={`hover:text-white ${page.route.id === '/projects' ? '' : 'text-gray-400'}`}>Projects</a
+				class={`hover:text-white ${page.route.id === '/projects' ? '' : 'text-gray-400'}`}
+				>Projects</a
 			>
 			<a href="/blog" class={`hover:text-white ${page.route.id === '/blog' ? '' : 'text-gray-400'}`}
 				>Blog</a
@@ -19,12 +21,12 @@
 		</nav>
 	</div>
 
-	<div class="flex justify-end align-middle">
+	<div class="flex justify-end">
 		<a
 			aria-label="github profile"
 			href="https://github.com/willbowden"
 			target="_blank"
-			class="h-8 rounded-sm p-0.5hover:bg-gray-900"
+			class="p-0.5hover:bg-gray-900 h-8 rounded-sm"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -60,4 +62,6 @@
 	</div>
 </div>
 
-{@render children()}
+<div class="h-[90%]">
+	{@render children()}
+</div>

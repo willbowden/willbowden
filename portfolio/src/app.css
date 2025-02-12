@@ -10,18 +10,31 @@
   .home::after {
     pointer-events: none;
     content: '';
-    background: rgb(2, 0, 36);
     background: linear-gradient(54deg in oklch,
         oklch(from rgba(9, 181, 177, 1) l c h / 0.65) -15%,
         oklch(from rgba(9, 181, 177, 1) l c h / 0) 48%),
-      linear-gradient(12deg in oklch,
-        oklch(from rgba(0, 112, 255, 1) calc(l - 0.1) c h / 0.65) -10%,
-        oklch(from rgba(0, 112, 255, 1) calc(l - 0.1) c h / 0) 45%);
+      linear-gradient(306deg in oklch,
+        oklch(from rgba(0, 112, 255, 1) calc(l - 0.1) c h / 0.65) -15%,
+        oklch(from rgba(0, 112, 255, 1) calc(l - 0.1) c h / 0) 48%);
+    animation: home-gradient 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+    background-size: 200% 200%;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
+  }
+}
+
+@keyframes home-gradient {
+  0% {
+    background-position: 50% 25%;
+  }
+  50% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 50% 25%;
   }
 }

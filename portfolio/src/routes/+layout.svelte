@@ -62,6 +62,6 @@
 	</div>
 </div>
 
-<div class="h-[90%]">
+<div class="h-[90%] w-[100%]">
 	{@render children()}
 </div>

@@ -1,1 +1,1 @@
-Blog
+<h1>Blog Entry Page</h1>

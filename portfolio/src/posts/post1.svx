@@ -1,0 +1,37 @@
+---
+title: "Test Post"
+date: "16th February 2025"
+blurb: "In the process of making my personal site, I have to write a blurb for my test blog post. Read ahead to see how I did that."
+published: true
+---
+
+# Hello!
+
+## This is some code.
+
+```c
+int main(int argc, char **args)
+{
+  return 0;
+}
+```
+
+
+## This is some code.
+
+```c
+int main(int argc, char **args)
+{
+  return 0;
+}
+```
+
+
+## This is some code.
+
+```c
+int main(int argc, char **args)
+{
+  return 0;
+}
+```

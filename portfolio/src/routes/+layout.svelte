@@ -5,7 +5,7 @@
 	let { children } = $props();
 </script>
 
-<div class="flex h-[10%] justify-between align-baseline p-4 text-white">
+<div class="flex h-[7%] justify-between align-baseline p-4 text-white">
 	<div>
 		<nav class="ml-3 flex justify-evenly space-x-5 text-2xl font-semibold">
 			<a href="/" class={`hover:text-white ${page.route.id === '/' ? '' : 'text-gray-400'}`}>Home</a
@@ -62,6 +62,6 @@
 	</div>
 </div>
 
-<div class="h-[90%] w-[100%]">
+<div class="h-[93%] w-full">
 	{@render children()}
 </div>

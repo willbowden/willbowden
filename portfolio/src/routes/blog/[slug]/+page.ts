@@ -7,5 +7,5 @@ export const load = async ({ params }) => {
 		throw error(404); // Couldn't resolve the post
 	}
 
-	return {post};
+	return { post };
 };

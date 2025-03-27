@@ -6,22 +6,22 @@
   class="w-full h-full flex flex-col justify-center justify-items-center items-center bg-cover bg-center bg-no-repeat relative"
   style="background-image: url({image})"
 >
-  <div class="absolute inset-0 bg-gray-900/70"></div>
+  <div class="absolute inset-0 bg-background/70"></div>
   <div class="z-10 flex flex-col items-center">
-    <h1 class="text-white text-8xl font-bold">
+    <h1 class="text-primary text-8xl font-bold">
       {title}
     </h1>
-    <h2 class="text-gray-200 text-4xl font-semibold">
+    <h2 class="text-muted text-4xl font-semibold">
       {subtitle}
     </h2>
     <div class="flex items-center w-[50%] gap-4 my-2">
       <div class="h-[1px] bg-gray-400 flex-grow"></div>
-      <h3 class="text-gray-400 text-xl font-medium whitespace-nowrap">
+      <h3 class="text-muted text-xl font-medium whitespace-nowrap">
         {date}
       </h3>
       <div class="h-[1px] bg-gray-400 flex-grow"></div>
     </div>
-    <p class="text-cyan-600 w-[30%] text-xl text-center">
+    <p class="text-muted w-[30%] text-xl text-center">
       {blurb}
     </p>
   </div>

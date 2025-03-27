@@ -6,18 +6,18 @@
 </script>
 
 <div class="relative h-screen w-full">
-	<div class="absolute w-full z-10 flex h-[10%] justify-between align-baseline px-8 pt-8 text-white">
+	<div class="absolute w-full z-10 flex h-[10%] justify-between align-baseline px-8 pt-8 text-foreground">
 		<div>
 			<nav class="ml-3 flex justify-evenly space-x-8 text-2xl font-semibold">
-				<a href="/" class={`hover:text-white ${page.route.id === '/' ? '' : 'text-gray-400'}`}>Home</a
+				<a href="/" class={`hover:text-primary ${page.route.id === '/' ? 'text-primary' : ''}`}>HOME</a
 				>
 				<a
 					href="/projects"
-					class={`hover:text-white ${page.route.id === '/projects' ? '' : 'text-gray-400'}`}
-					>Projects</a
+					class={`hover:text-primary ${page.route.id === '/projects' ? 'text-primary' : ''}`}
+					>PROJECTS</a
 				>
-				<a href="/blog" class={`hover:text-white ${page.route.id === '/blog' ? '' : 'text-gray-400'}`}
-					>Blog</a
+				<a href="/blog" class={`hover:text-primary ${page.route.id === '/blog' ? 'text-primary' : ''}`}
+					>BLOG</a
 				>
 			</nav>
 		</div>

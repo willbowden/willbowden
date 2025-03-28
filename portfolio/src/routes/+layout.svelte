@@ -9,14 +9,13 @@
 	<div class="absolute w-full z-10 flex h-[10%] justify-between align-baseline px-8 pt-8 text-foreground">
 		<div>
 			<nav class="ml-3 flex justify-evenly space-x-8 text-2xl font-semibold">
-				<a href="/" class={`hover:text-primary ${page.route.id === '/' ? 'text-primary' : ''}`}>HOME</a
-				>
+				<a href="/" class={`hover:text-primary ${page.route.id === '/' ? 'text-primary' : ''}`}>HOME</a>
 				<a
 					href="/projects"
-					class={`hover:text-primary ${page.route.id === '/projects' ? 'text-primary' : ''}`}
+					class={`hover:text-primary ${page.url.toString().includes('/projects') ? 'text-primary' : ''}`}
 					>PROJECTS</a
 				>
-				<a href="/blog" class={`hover:text-primary ${page.route.id === '/blog' ? 'text-primary' : ''}`}
+				<a href="/blog" class={`hover:text-primary ${page.url.toString().includes('/blog') ? 'text-primary' : ''}`}
 					>BLOG</a
 				>
 			</nav>

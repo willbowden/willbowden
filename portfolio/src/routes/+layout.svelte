@@ -1,11 +1,61 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import { CircuitLine } from '$lib/CircuitLine';
 	import '../app.css';
 	import { page } from '$app/state';
 
 	let { children } = $props();
+
+	let canvas: HTMLCanvasElement;
+	let ctx: CanvasRenderingContext2D;
+
+	let width: number = $state(0);
+	let height: number = $state(0);
+
+	let lines: Array<CircuitLine> = [];
+
+	const TARGET_FPS = 30;
+	const FRAME_DURATION = 1000 / TARGET_FPS; // ~33.33ms
+
+	let lastTime = performance.now();
+	let accumulator = 0;
+
+	onMount(() => {
+		width = window.innerWidth;
+		height = window.innerHeight;
+		ctx = canvas.getContext('2d')!;
+
+		// Create multiple lines
+		for (let i = 0; i < 10; i++) {
+			lines.push(new CircuitLine(Math.random() * width, height));
+		}
+
+		function animate(now: number) {
+			const delta = now - lastTime;
+			lastTime = now;
+			accumulator += delta;
+
+			while (accumulator >= FRAME_DURATION) {
+				ctx.clearRect(0, 0, width, height);
+				lines.forEach((line, index) => {
+					line.update();
+					line.testForDying(width, height);
+					if (line.dying && line.opacity <= 0) {
+						lines[index] = new CircuitLine(Math.random() * width, height);
+					}
+					line.draw(ctx);
+				});
+				accumulator -= FRAME_DURATION;
+			}
+
+			requestAnimationFrame(animate);
+		}
+
+		requestAnimationFrame(animate);
+	});
 </script>
 
-<div class="flex h-[7%] justify-between align-baseline p-4 text-white">
+<div class="flex h-[7%] justify-between p-4 align-baseline text-white">
 	<div>
 		<nav class="ml-3 flex justify-evenly space-x-5 text-2xl font-semibold">
 			<a href="/" class={`hover:text-white ${page.route.id === '/' ? '' : 'text-gray-400'}`}>Home</a
@@ -63,5 +113,7 @@
 </div>
 
 <div class="h-[93%] w-full">
+	<canvas bind:this={canvas} {width} {height} class="absolute left-0 top-0 z-[-1] h-full w-full"
+	></canvas>
 	{@render children()}
 </div>

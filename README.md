@@ -2,14 +2,16 @@
 
 ## 🚀 About Me
 
-I'm a penultimate-year Computer Science student with nearly a decade of programming experience, specialising in full-stack development, cloud infrastructure, and distributed systems. I love tackling complex engineering problems and learning new technologies along the way.  
+I'm a Computer Science Master's student with nearly a decade of programming experience.
 
-- 💻 Strong focus on **backend engineering, distributed systems, and cloud infrastructure**.
-- 🌍 Developed numerous **full-stack applications** across web, mobile, and cloud platforms.
-- 🔧 Experienced with **Go, Python, TypeScript, and C**.
-- ☁️ Worked with **AWS, CloudFormation, and Infrastructure-as-Code**.
-- 🎮 Passionate about **problem solving, full-stack development, and game development**.
-- 📚 Always learning and participating in **hackathons**.
+## 💛 I'm Passionate About
+
+- Mastering Vim motions.
+- Writing technical documentation.
+- Solving merge conflicts.
+- Optimising daily scrums.
+- Building microservices.
+- Maximising shareholder value.
 
 ## 🛠️ Technologies & Tools
 
@@ -29,7 +31,7 @@ I'm a penultimate-year Computer Science student with nearly a decade of programm
 
 ### 🔹 [Cookly](#-cookly)
 
-*A joint venture with the industrious [Xav](https://github.com/xavcochran) and charismatic [George](https://github.com/Gand4lf).*
+*A joint venture with [Xav](https://github.com/xavcochran) and [George](https://github.com/Gand4lf).*
 
 A recipe and nutrition app developed as part of a startup.
 - 📱 Built with **React Native and Redux** for mobile platforms.
@@ -38,7 +40,7 @@ A recipe and nutrition app developed as part of a startup.
 
 ### 🔹 [UBUC Inventory System](https://ubuc-inventory-system.web.app/)
 
-*Made in collaboration with my exceptional teammates [Alex](https://github.com/bristermitten), [Sean](https://github.com/Thisiseanxu) and [Bill](https://github.com/sd22206).*
+*Made in collaboration with my teammates [Alex](https://github.com/bristermitten), [Sean](https://github.com/Thisiseanxu) and [Bill](https://github.com/sd22206).*
 
 A multi-platform inventory management system built for the [University of Bristol Underwater Club](https://ubuc.org/).
 - 🌍 Built with **ReactJS, TypeScript, and Firebase**.
@@ -47,7 +49,7 @@ A multi-platform inventory management system built for the [University of Bristo
 
 ### 🔹 [Distributed Game of Life](https://github.com/willbowden/gol-cw)
 
-*Created in collaboration with the wonderful [Blaise](https://github.com/blaisesheehan).*
+*Created in collaboration with [Blaise](https://github.com/blaisesheehan).*
 
 Parallel and distributed implementation of **Conway’s Game of Life** with a **450% performance boost**.
 - ⚡️ Written in **Go, using AWS for cloud execution**.

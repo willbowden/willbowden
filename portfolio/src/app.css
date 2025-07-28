@@ -5,9 +5,21 @@
 
 @import '../static/prism-atom-dark.css';
 
+@plugin "@iconify/tailwind4" {
+  prefixes: iconoir;
+}
 
 @theme {
   --font-geist: "Inter", serif;
+}
+
+.custom-gradient {
+  background: linear-gradient(54deg in oklch,
+        oklch(from rgba(9, 181, 177, 1) l c h / 0.65) -5%,
+        oklch(from rgba(9, 181, 177, 1) l c h / 0.05) 80%),
+      linear-gradient(306deg in oklch,
+        oklch(from rgba(0, 112, 255, 1) calc(l - 0.1) c h / 0.65) -5%,
+        oklch(from rgba(0, 112, 255, 1) calc(l - 0.1) c h / 0.05) 80%);
 }
 
 @layer components {
@@ -36,9 +48,11 @@
   0% {
     background-position: 50% 25%;
   }
+
   50% {
     background-position: 50% 75%;
   }
+
   100% {
     background-position: 50% 25%;
   }

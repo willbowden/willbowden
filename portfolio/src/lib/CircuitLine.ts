@@ -43,7 +43,6 @@ export class CircuitLine {
   }
 
   draw(ctx: CanvasRenderingContext2D) {
-    console.log(`Number of points: ${this.path.length}`);
     if (this.dying) {
       this.opacity -= 0.01;
     }

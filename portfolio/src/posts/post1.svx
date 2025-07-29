@@ -2,7 +2,8 @@
 title: "Test Post"
 date: "2025-02-12"
 blurb: "In the process of making my personal site, I have to write a blurb for my test blog post. Read ahead to see how I did that."
-published: true
+published: false
+img: "test.jpg"
 ---
 
 # Hello!

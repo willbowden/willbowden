@@ -112,8 +112,8 @@
 	</div>
 </div>
 
-<div class="h-[93%] w-full">
+<main class="h-[93%] w-full scrollbar-hide">
 	<canvas bind:this={canvas} {width} {height} class="absolute left-0 top-0 z-[-1] h-full w-full"
 	></canvas>
 	{@render children()}
-</div>
+</main>

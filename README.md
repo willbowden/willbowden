@@ -2,7 +2,7 @@
 
 ## About Me
 
-I'm a Computer Science Master's student with nearly a decade of programming experience.
+I'm a Computer Science Master's student with interests in cybersecurity and systems programming.
 
 ## Featured Projects
 
